@@ -37,4 +37,5 @@ console.log(rererssent)
 // string 
 const reversSentex = sentence.split('').reverse().join("");
 
-console.log(reversSentex)
+console.log(reversSentex);
+

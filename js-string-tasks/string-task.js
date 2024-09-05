@@ -10,7 +10,7 @@ for(let i = 0; i < text.length ; i++){
         countA++
     }
 }
-console.log(countA)
+// console.log(countA)
 
 // ---
 // ### Task-2: 
@@ -22,7 +22,7 @@ for(let i = 0; i < text.length ; i++){
         countAa++
     }
 }
-console.log(countAa)
+// console.log(countAa)
 
 // ---
 
@@ -34,7 +34,11 @@ const string = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum f
 
 
 for(let i = 0; i < string.length; i++){
-    
+
+    if( string[i] == "a" ||string[i] == "A" || string[i] == "e" || string[i] == "E" || string[i] == "i" || string[i] == "I" || string[i] == "o" || string[i] == "u" || string[i] == "U" || string[i] == "O" ){
+
+        console.log(string[i])
+}
 }
 
 
