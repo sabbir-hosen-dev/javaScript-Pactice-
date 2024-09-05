@@ -33,13 +33,13 @@ for(let i = 0; i < text.length ; i++){
 const string = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat facilis nobis!"
 
 
-for(let i = 0; i < string.length; i++){
+// for(let i = 0; i < string.length; i++){
 
-    if( string[i] == "a" ||string[i] == "A" || string[i] == "e" || string[i] == "E" || string[i] == "i" || string[i] == "I" || string[i] == "o" || string[i] == "u" || string[i] == "U" || string[i] == "O" ){
+//     if( string[i] == "a" ||string[i] == "A" || string[i] == "e" || string[i] == "E" || string[i] == "i" || string[i] == "I" || string[i] == "o" || string[i] == "u" || string[i] == "U" || string[i] == "O" ){
 
-        console.log(string[i])
-}
-}
+//         console.log(string[i])
+// }
+// }
 
 
 
@@ -53,3 +53,21 @@ for(let i = 0; i < string.length; i++){
 // ---
 // ### Task-5:
 // Capitalize Every first Letter of each word in a String
+
+
+const sentence = "Capitalize Every first Letter of each word in a String";
+
+let words = sentence.split(" ");
+
+let capStWord = [];
+
+for(let i = 0 ;  i < words.length; i++){
+
+    let word = words[i]
+    let capWord = word.charAt(0).toUpperCase() + word.slice(1);
+    capStWord.push(capWord)
+}
+
+let capStWordAll = capStWord.join(" ")
+
+// console.log(capStWordAll)
