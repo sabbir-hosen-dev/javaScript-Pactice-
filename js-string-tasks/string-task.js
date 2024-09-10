@@ -50,6 +50,22 @@ const string = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum f
 
 //     Hint: You should be able to check whether x or X exists. After that, search online how to replace a character in a string.
 
+function replaceCharacters(inputString) {
+    // Replace 'x' with 'y'
+    let result = inputString.replace(/x/g, 'y');
+    // Replace 'X' with 'Y'
+    result = result.replace(/X/g, 'Y');
+    return result;
+}
+
+// Example usage:
+console.log(replaceCharacters("Example string with x and X."));
+// Output: "Eyample string with y and Y."
+
+
+
+
+
 // ---
 // ### Task-5:
 // Capitalize Every first Letter of each word in a String

@@ -60,8 +60,8 @@ const smallName = samllerSring(names);
 
 function totalCalculator(laptop, tablet, mobile) {
   if (
-    typeof laptop !== "number" &&
-    typeof tablet !== "number" &&
+    typeof laptop !== "number" ||
+    typeof tablet !== "number" ||
     typeof mobile !== "number"
   ) {
     return "Invalite Price";
