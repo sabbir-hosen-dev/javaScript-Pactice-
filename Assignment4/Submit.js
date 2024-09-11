@@ -10,7 +10,11 @@ function calculateTax(income, expense) {
 }
 
 function sendNotification(email) {
-  if (typeof email !== "string" || !email.indexOf("@") || email.indexOf("@") == -1) {
+  if (
+    typeof email !== "string" ||
+    !email.indexOf("@") ||
+    email.indexOf("@") == -1
+  ) {
     return "Invalid Email";
   }
 
@@ -26,7 +30,12 @@ function checkDigitsInName(name) {
     return "Invalid Input";
   }
 
-  return name.includes(1, 2, 3, 4, 5, 7, 8, 9, 0) ? true : false;
+  for (let i = 0; i < name.length; i++) {
+    if (!isNaN(name[i]) && name[i] !== " ") {
+      return true;
+    }
+  }
+  return false;
 }
 
 function calculateFinalScore(obj) {
