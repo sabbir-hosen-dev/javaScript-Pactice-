@@ -8,13 +8,9 @@ function calculateTax(income, expense) {
 
   return tax;
 }
-
+//email notifacation
 function sendNotification(email) {
-  if (
-    typeof email !== "string" ||
-    !email.indexOf("@") ||
-    email.indexOf("@") == -1
-  ) {
+  if (typeof email !== "string" || email.indexOf("@") === -1) {
     return "Invalid Email";
   }
 
